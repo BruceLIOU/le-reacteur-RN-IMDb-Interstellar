@@ -5,7 +5,8 @@
 
 > This is my first app mobile wiyh react native and expo. 📱
 
-### ✨ [Demo](https://github.com/BruceLIOU/le-reacteur-RN-IMDb-Interstellar/blob/main/_preview/preview_app.gif)
+### ✨ PREVIEW
+[!preview](https://github.com/BruceLIOU/le-reacteur-RN-IMDb-Interstellar/blob/main/_preview/preview_app.gif)
 
 ## Install
 
