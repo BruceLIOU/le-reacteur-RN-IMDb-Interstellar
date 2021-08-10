@@ -104,7 +104,7 @@ const App = () => {
           </View>
         </View>
 
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View style={{ backgroundColor: "#212121", marginTop: 15 }}>
             <View
               style={{
@@ -134,18 +134,10 @@ const App = () => {
                   style={{ height: 200, width: 150 }}
                   source={require("./assets/Matthew-McConaughey.jpg")}
                 />
-                <Text
-                  style={[styles.actors]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.actors]} numberOfLines={1}>
                   Matthew McConaughey
                 </Text>
-                <Text
-                  style={[styles.characters]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.characters]} numberOfLines={1}>
                   Cooper
                 </Text>
               </View>
@@ -154,18 +146,10 @@ const App = () => {
                   style={{ height: 200, width: 150 }}
                   source={require("./assets/Anne-Hathaway.jpg")}
                 />
-                <Text
-                  style={[styles.actors]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.actors]} numberOfLines={1}>
                   Anne Hathaway
                 </Text>
-                <Text
-                  style={[styles.characters]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.characters]} numberOfLines={1}>
                   Brand
                 </Text>
               </View>
@@ -174,19 +158,11 @@ const App = () => {
                   style={{ height: 200, width: 150 }}
                   source={require("./assets/Jessica-Chastain.jpg")}
                 />
-                <Text
-                  style={[styles.actors]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.actors]} numberOfLines={1}>
                   Jessica Chastain
                 </Text>
 
-                <Text
-                  style={[styles.characters]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.characters]} numberOfLines={1}>
                   Murph
                 </Text>
               </View>
@@ -196,18 +172,10 @@ const App = () => {
                   style={{ height: 200, width: 150 }}
                   source={require("./assets/Ellen-Burstyn.jpg")}
                 />
-                <Text
-                  style={[styles.actors]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.actors]} numberOfLines={1}>
                   Ellen Burstyn
                 </Text>
-                <Text
-                  style={[styles.characters]}
-                  numberOfLines={1}
-                  ellipsizeMode="tail"
-                >
+                <Text style={[styles.characters]} numberOfLines={1}>
                   Murph (Older)
                 </Text>
               </View>
@@ -295,8 +263,9 @@ const styles = StyleSheet.create({
   },
   rateLineTotal: {
     color: "#E8E8E8",
-    fontSize: 16,
+    fontSize: 14,
     justifyContent: "flex-end",
+    paddingTop: 4,
   },
   actors: {
     color: "#E8E8E8",
