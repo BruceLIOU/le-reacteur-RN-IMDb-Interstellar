@@ -72,7 +72,7 @@ const App = () => {
             </View>
           </View>
           <View style={[styles.rateCard, styles.flexDirectionRow]}>
-            <View style={[styles.alignItemsCenter]}>
+            <View style={[styles.alignItemsCenter, styles.rateCardSingle]}>
               <Entypo name="star" size={32} color="yellow" />
 
               <View style={[styles.flexDirectionRow, styles.alignItemsCenter]}>
@@ -85,11 +85,11 @@ const App = () => {
                 1.1 M
               </Text>
             </View>
-            <View style={[styles.alignItemsCenter]}>
+            <View style={[styles.alignItemsCenter, styles.rateCardSingle]}>
               <EvilIcons name="star" size={42} color="white" />
-              <Text style={{ color: "#E8E8E8", marginTop: 5 }}>RATE THIS</Text>
+              <Text style={{ color: "#E8E8E8", marginTop: 10 }}>RATE THIS</Text>
             </View>
-            <View style={[styles.alignItemsCenter]}>
+            <View style={[styles.alignItemsCenter, styles.rateCardSingle]}>
               <Image
                 style={{ height: 20, width: 20, marginTop: 10 }}
                 source={require("./assets/metaScore.png")}
@@ -283,6 +283,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     alignItems: "center",
     marginTop: 20,
+  },
+  rateCardSingle: {
+    flex: 1,
   },
   rateLineNote: {
     color: "#E8E8E8",
