@@ -16,12 +16,13 @@ import Constants from "expo-constants";
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <StatusBar style="auto" />
-        <View style={[styles.marginBottom15, styles.header]}>
+      <ScrollView style={{ backgroundColor: "#191919" }}>
+        <StatusBar style="light" />
+        <View style={[styles.header]}>
           <Image
             style={{ height: 60, width: 70 }}
             source={require("./assets/logo-white.png")}
+            resizeMode="contain"
           />
         </View>
 
@@ -39,6 +40,7 @@ const App = () => {
             <Image
               style={{ height: 150, width: 100 }}
               source={require("./assets/cover.jpg")}
+              resizeMode="cover"
             />
             <View style={[styles.descriptionCard, styles.flexDirectionColumn]}>
               <Text style={[styles.description]}>
@@ -54,7 +56,7 @@ const App = () => {
                   height: 30,
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "90%",
+                  width: "100%",
                   borderRadius: 4,
                 }}
               >
@@ -233,9 +235,6 @@ const styles = StyleSheet.create({
     marginTop: Platform.OS === "android" ? Constants.statusBarHeight : 0,
     color: "#ffffff",
   },
-  statusBar: {
-    color: "#ffffff",
-  },
   marginBottom15: {
     marginBottom: 15,
   },
@@ -257,7 +256,8 @@ const styles = StyleSheet.create({
 
   header: {
     backgroundColor: "#393939",
-    padding: 10,
+    paddingLeft: 10,
+    height: 50,
   },
   title: {
     backgroundColor: "#212121",
@@ -288,10 +288,12 @@ const styles = StyleSheet.create({
     color: "#E8E8E8",
     fontSize: 20,
     fontWeight: "bold",
+    justifyContent: "flex-start",
   },
   rateLineTotal: {
     color: "#E8E8E8",
     fontSize: 16,
+    justifyContent: "flex-end",
   },
   actors: {
     color: "#E8E8E8",
